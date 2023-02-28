@@ -341,7 +341,7 @@ class Calendar
         }
         $json = str_replace($search, $replace, $json);
 
-        return preg_replace('/"(.+)":/i', '${1}:', $json);
+        return preg_replace('/"(.+?)":/i', '${1}:', $json);
 
     }
 }
